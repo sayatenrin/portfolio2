@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* font-family: 'Vollkorn', serif; */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3{
+  text-transform: capitalize;
+}
+
+nav{
+  width: 100%;
+  padding: 0 30px;
+  background: #eaeaea;
+  color: #707070;  
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+nav .logo{
+  display: flex;
+  margin: auto;
+  font-size: 30px;
+  font-family: Mezilla;
+  padding: 5px;
+}
+nav .logo h2{
+  margin: auto;
+}
+nav .nav{
+  margin: auto; 
+  display: flex;
+  justify-content: space-between;
+}
+.nav a{
+  margin: auto;
+  padding: 15px 0;
+  flex: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Vollkorn italic';
+}
+
+
+#titel{
+  width: 100%;
+  height: 400px;
+}
+
+#title h2{
+  margin-top: 100px;
+  line-height: 2;
+  font-size: 50px;
+  font-family: 'Vollkorn', serif; 
+  color: #E3D29F;
+  text-align: center;
+  text-transform: uppercase;
+}
+hr{
+  width: 90%;
+  margin: 1em auto;
+  color: white;
+  border-top: 3px dashed #E3D29F;
+}
+body hr:nth-child(1){
+  margin-top: 50px;
+}
+
+#store{
+  width: 90%;
+  /* height: 250px; */
+  margin: auto;
+  padding: 1em;
+  color: #999999;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.image-wrapper{
+  width: 300px;
+  height: 200px;
+  background: #eaeaea;
+  margin: auto 20px;
+  overflow: hidden;
+}
+.image-wrapper img{
+  height: 100%;
+}
+.text{
+  margin-left: 1em;
+}
+.text h3{
+  font-size: 24px;
+  font-family: 'Vollkorn', serif;
+  color: #707070;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.text p{
+  margin: 0 0 1em 2em;
+}
+
+
+
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#sns{
+  margin-top: 50px;
+  color: #999999;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+.icon{
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#sns a img{
+  width: 35px;
+}
+
+#bottom{
+  width: 100%;
+  padding: 1em 2em;
+  margin-top: 30px;
+  background: #eaeaea;
+  color: rgba(0, 0, 0, 0.7);
+}
+#bottom div{
+  border: 2px solid #999999;
+  padding: 1em;
+}
+.bottom-nav a{
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize; 
+}
+.address p:nth-child(1){
+  line-height: 2;
+}
+.address p:nth-child(2){
+  font-size: 14px;
+}
+.address p:nth-child(3){
+  font-size: 14px;
+  line-height: 2;
+}
+.infomation{
+  display: flex;
+  flex-direction: column;
+}
+.infomation a{
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2;
+}
+
+.footer{
+  width: 100%;
+  padding: 1em;
+  background: #999999;
+  text-align: center;
+  color: white;
+}
+
+.go-up{
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.521);
+  border-radius: 10px 0 0 0;
+  font-size: 35px;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+}
+.go-up a{
+  color: #333;
+  margin: auto;
+}
+
+
+
+@media(max-width:768px){
+  .nav a{
+    font-size: 16px;
+    display: none;
+  }
+  nav:hover a{
+    display: block;
+  }
+  .nav a:hover{
+    background: #E3D29F;
+    color: white;
+    font-size: 16px;
+  }
+  
+  #store{
+    flex-direction: column;
+  }
+  .image-wrapper,.text{
+    margin: auto;
+  }
+  .image-wrapper img{
+    width: 100%;
+  }
+  .text{
+    width: 350px;
+    margin-top: 1em;
+  }
+  .text h3{
+    text-align: center;
+  }
+  .text p{
+    margin-left: 0;
+  }
+  .text span{
+    margin-left: 4em;
+  }
+
+  .icon{
+    width: 50%;
+  }
+  #bottom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .bottom-nav{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .address{
+    margin-bottom: 1em;
+  }
+  .address,.infomation{
+    grid-column: 2/3;
+    margin-left: 1em;
+  }
+
+}
+
+
+@media(min-width:769px){
+  nav{
+    display: flex;
+  }
+  nav .logo{
+    flex: 1;
+  }
+  nav .nav{
+    flex: 2;
+  }
+  .nav a:hover{
+    background: #E3D29F;
+    color: white;
+    font-size: 24px;
+  }
+
+  #bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  #bottom div{
+    flex-basis: 32%;
+  }
+
+  .bottom-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

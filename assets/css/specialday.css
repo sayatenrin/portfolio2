@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;1,400;1,900&display=swap');
+
+/* font-family: 'Vollkorn', serif; */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  font-family: Mezilla;
+}
+h1,h2,h3{
+  text-transform: capitalize;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: url('../images/balloon.jpg');
+  opacity: 0.65;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+}
+
+header div{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+nav{
+  width: 100%;
+  padding: 0 30px;
+  background: #eaeaea;
+  color: #707070;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo{
+  display: flex;
+  margin: auto;
+  font-size: 30px;
+  padding: 5px;
+}
+nav .logo h2{
+  margin: auto;
+}
+nav .nav{
+  margin: auto; 
+  display: flex;
+  justify-content: space-between;
+}
+.nav a{
+  margin: auto;
+  padding: 15px 0;
+  flex: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color: #707070;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Vollkorn italic';
+}
+
+
+#top{
+  width: 100%;
+  height: 100vh;
+  padding-top:100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.top-text{
+  width: 50%;
+  margin: auto;
+  line-height: 2;
+}
+.top-text h2{ 
+  font-size: 50px;
+  font-family: 'Vollkorn', serif; 
+  color: #E3D29F;
+}
+.top-text p{
+  font-size: 20px;
+}
+
+.nav2{
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  border-top: 3px dashed #E3D29F;
+  border-bottom: 3px dashed #E3D29F;
+  display: flex;
+}
+
+.nav2 a{
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  line-height: 2.5;
+  font-family: 'Vollkorn';
+  margin: 0 30px;
+  transform: ease 0.3s;
+}
+
+.nav2 a:hover{
+  background: #E3D29F;
+  border-radius: 50px;
+  color: white;
+}
+
+
+#birthday,#wedding,#party{
+  padding: 1em;
+}
+ 
+.sub{
+  font-size: 40px;
+  color: white;
+  margin-left: 30px;
+  line-height: 1.5;
+}
+#party .sub{
+  margin-left: 65px;
+}
+.text{
+  font-size: 20px;
+  color: white;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section hr{
+  width: 180px;
+  border: 1.5px solid white;
+}
+section hr:nth-child(1){
+  margin-left: 50px;
+}
+
+.box{
+  width: 90%;
+  /* border: 2px dashed red; */
+  text-align: center;
+}
+/* .inner{
+  border: 2px dashed blue;
+} */
+
+.image-wrapper{
+  box-shadow: 2px 2px 5px #555;
+}
+#birthday .image-wrapper{
+  width: 300px;
+  height: 200px;
+  background: #eaeaea;
+  margin: 1em 0;
+  overflow: hidden;
+}
+#wedding .image-wrapper{
+  width: 220px;
+  height: 300px;
+  background: #eaeaea;
+  margin: 1em;
+  overflow: hidden;
+}
+#party .image-wrapper{
+  width: 250px;
+  height: 170px;
+  background: #eaeaea;
+  margin: 1em 0;
+  overflow: hidden;
+}
+.p1 img{
+  height: 100%;
+}
+
+.p2 img{
+  width: 100%;
+}
+.p3{
+  position: relative;
+}
+.p3 img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+}
+
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#sns{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+.icon{
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#sns a img{
+  width: 35px;
+}
+#bottom{
+  width: 100%;
+  padding: 1em 2em;
+  margin-top: 30px;
+  background: #eaeaea;
+  color: rgba(0, 0, 0, 0.7);
+}
+#bottom div{
+  border: 2px solid #999999;
+  padding: 1em;
+}
+.bottom-nav a{
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize; 
+}
+.address p:nth-child(1){
+  line-height: 2;
+}
+.address p:nth-child(2){
+  font-size: 14px;
+}
+.address p:nth-child(3){
+  font-size: 14px;
+  line-height: 2;
+}
+.infomation{
+  display: flex;
+  flex-direction: column;
+}
+.infomation a{
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 2;
+}
+
+.footer{
+  width: 100%;
+  padding: 1em;
+  background: #999999;
+  text-align: center;
+  color: white;
+}
+
+.go-up{
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.521);
+  border-radius: 10px 0 0 0;
+  font-size: 35px;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+}
+.go-up a{
+  color: #333;
+  margin: auto;
+}
+
+
+
+
+@media(max-width:768px){
+  .nav a{
+    font-size: 16px;
+    display: none;
+  }
+  nav:hover a{
+    display: block;
+  }
+  .nav a:hover{
+    background: #E3D29F;
+    color: white;
+    font-size: 16px;
+  }
+
+  .top-text p{
+    line-height: 1;
+  }
+  #birthday,#wedding,#party{
+    padding: 50px 0;
+    background: #e3d29fbd;
+  }
+
+  #birthday,#wedding{
+    margin-bottom: 100px;
+  }
+
+  .box{
+    flex-direction: column;
+    margin: 50px auto 0;
+  }
+
+  #birthday .inner,
+  #party .inner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #birthday .image-wrapper{
+    flex-basis: 300px;
+  }
+  #birthday .text{
+    flex-basis: 40%;
+  }
+
+  #wedding .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: -50px;
+  }
+  #wedding .inner{
+    margin-bottom: 50px;
+  }
+  #wedding .image-wrapper{
+    margin: auto;
+  }
+  #wedding .text{
+    margin-top: 10px;
+  }
+  
+
+  #party .image-wrapper{
+    flex-basis: 250px;
+  }
+  #party .text{
+    flex-basis: 55%;
+    margin: auto;
+  }
+  .space{
+    margin-bottom: 30px;
+  }
+
+
+  .icon{
+    width: 50%;
+  }
+  #bottom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .bottom-nav{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .address{
+    margin-bottom: 1em;
+  }
+  .address,.infomation{
+    grid-column: 2/3;
+    margin-left: 1em;
+  }
+
+}
+
+@media(min-width:769px){
+  nav{
+    display: flex;
+  }
+
+  nav .logo{
+    flex: 1;
+  }
+  nav .nav{
+    flex: 2;
+  }
+  .nav a:hover{
+    background: #E3D29F;
+    color: white;
+    font-size: 24px;
+  }
+  
+  #birthday::before,
+  #party::before{
+    content: "";
+    width: 100%;
+    height: 600px;
+    margin-left: 0;
+    background: #E3D29F;  
+    opacity: 0.7;
+    transform: skewY(10deg);
+    position: absolute;
+    top: 0;
+    left: -2px;
+    z-index: -1; 
+  }
+  #wedding::before{
+    content: "";
+    width: 100%;
+    height: 600px;
+    margin-right: 0;
+    background: #E3D29F;  
+    opacity: 0.7;
+    transform: skewY(10deg);
+    position: absolute;
+    top: 0;
+    right: -2px;
+    z-index: -1; 
+  }
+  #birthday{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 0;
+    position: relative;
+  }
+   
+  #wedding{
+    width: 100%;
+    height: 500px;
+    margin-top: 260px;
+    margin-bottom: 200px;
+    position: relative;
+  }
+  
+  #party{
+    width: 100%;
+    height: 500px;  
+    position: relative;
+  }
+
+
+  .box{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #birthday .inner{
+    width: 300px;
+  }
+  #wedding .inner{
+    width: 220px;
+    margin: 0 5px;
+  }
+  #party .inner{
+    width: 250px;
+    margin: 0 5px;
+  }
+  .b2{
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  #birthday 
+  .box div:nth-child(2){
+    margin-top: 60px;
+  }
+ 
+  #wedding .box div:nth-child(2){
+    margin-top: 40px;
+  }
+  #wedding .box div:nth-child(3){
+    margin-top: 80px;
+  }
+
+  #party .box div:nth-child(2){
+    margin-top: 70px;
+  }
+  #party .box div:nth-child(3){
+    margin-top: 140px;
+  }
+  .image-wrapper{
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  footer{
+    margin-top: 200px;
+  }
+  
+  #bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  #bottom div{
+    flex-basis: 32%;
+  }
+
+  .bottom-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width:1080px){
+  #birthday{
+    width: 85%;
+  }
+   
+  #wedding{
+    width: 85%;
+    float: right;
+  }
+  
+  #party{
+    clear: right;
+    width: 85%;
+  }
+
+}
