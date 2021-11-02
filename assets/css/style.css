@@ -155,9 +155,9 @@ nav .nav{
   margin: auto;
   display: flex;
   justify-content: space-around;
-  opacity: 0;
+  /* opacity: 0;
   transform: translate(-300px,0);
-  transition: ease-in-out 2000ms;
+  transition: ease-in-out 2000ms; */
 }
 
 .card{
