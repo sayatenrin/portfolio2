@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Vollkorn', serif;
 }
 .logo{
   font-family: Mezilla;
@@ -87,7 +88,8 @@ nav .nav{
   font-size: 120px;
 }
 .top-text p{
-  font-family: 'Vollkorn italic';
+  font-family: 'Vollkorn', serif;
+  font-style: italic;
 }
 
 #about{
