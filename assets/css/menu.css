@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.logo{
+  font-family: Mezilla;
+}
+
 h1,h2,h3{
   text-transform: capitalize;
 }
@@ -22,14 +26,13 @@ nav{
   z-index: 10;
 }
 
-nav .logo{
+.logo-wrap{
   display: flex;
   margin: auto;
   font-size: 30px;
-  font-family: Mezilla;
   padding: 5px;
 }
-nav .logo h2{
+.logo-wrap h2{
   margin: auto;
 }
 nav .nav{
